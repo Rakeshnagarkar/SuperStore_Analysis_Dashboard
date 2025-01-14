@@ -24,7 +24,7 @@ if fl is not None:
     elif filename.endswith('.xls'):
         df = pd.read_excel(fl, engine='xlrd')
 else:
-    os.chdir(r"D:\Datasets\SuperMarket")
+    os.chdir(r"D:\Main\Python\Mini_Project")
     df = pd.read_excel("Superstore.xls", engine='openpyxl')
 
 col1, col2 = st.columns((2))
